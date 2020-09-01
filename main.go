@@ -19,7 +19,7 @@ import (
 
 func main() {
 
-	logrus.SetLevel(logrus.DebugLevel)
+	logrus.SetLevel(logrus.InfoLevel)
 
 	mongodbURL := ""
 	flag.StringVar(&mongodbURL, "mongodb-url", "", "MongoDB URL in format 'mongodb://[user]:[pass]@[host]:[port]/[db]'. required")
