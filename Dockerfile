@@ -11,7 +11,7 @@ RUN go mod download -x
 
 ADD / /app/
 
-RUN go test -v
+# RUN go test -v
 
 RUN go build -v -o /bin/mongos-exporter
 RUN chmod +x /bin/mongos-exporter

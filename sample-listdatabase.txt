@@ -1,0 +1,74 @@
+{
+    "databases" : [ 
+        {
+            "name" : "admin",
+            "sizeOnDisk" : 229376,
+            "empty" : false,
+            "shards" : {
+                "config" : 229376
+            }
+        }, 
+        {
+            "name" : "config",
+            "sizeOnDisk" : 6029312,
+            "empty" : false,
+            "shards" : {
+                "shard1" : 1204224,
+                "shard2" : 1200128,
+                "shard3" : 1110016,
+                "config" : 2514944
+            }
+        }, 
+        {
+            "name" : "edidatico",
+            "sizeOnDisk" : 5880246272.0,
+            "empty" : false,
+            "shards" : {
+                "shard1" : 3041538048.0,
+                "shard2" : 1510887424.0,
+                "shard3" : 1327820800.0
+            }
+        }, 
+        {
+            "name" : "sampledb",
+            "sizeOnDisk" : 921600,
+            "empty" : false,
+            "shards" : {
+                "shard1" : 282624,
+                "shard2" : 356352,
+                "shard3" : 282624
+            }
+        }, 
+        {
+            "name" : "test",
+            "sizeOnDisk" : 390152192,
+            "empty" : false,
+            "shards" : {
+                "shard1" : 82382848,
+                "shard2" : 40685568,
+                "shard3" : 267083776
+            }
+        }, 
+        {
+            "name" : "test3",
+            "sizeOnDisk" : 45056,
+            "empty" : false,
+            "shards" : {
+                "shard1" : 20480,
+                "shard2" : 12288,
+                "shard3" : 12288
+            }
+        }
+    ],
+    "totalSize" : 6277623808.0,
+    "totalSizeMb" : 5986,
+    "ok" : 1.0,
+    "operationTime" : Timestamp(1598918031, 1),
+    "$clusterTime" : {
+        "clusterTime" : Timestamp(1598918031, 1),
+        "signature" : {
+            "hash" : { "$binary" : "lA383LrwjAK3q63PueqPfcC3c+E=", "$type" : "00" },
+            "keyId" : NumberLong(6861322835042762759)
+        }
+    }
+}

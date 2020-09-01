@@ -1,0 +1,469 @@
+{
+    "host" : "dfc1af64c51a",
+    "version" : "4.4.0",
+    "process" : "mongos",
+    "pid" : NumberLong(10),
+    "uptime" : 74531.0,
+    "uptimeMillis" : NumberLong(74530964),
+    "uptimeEstimate" : NumberLong(74530),
+    "localTime" : ISODate("2020-09-01T00:14:33.132Z"),
+    "asserts" : {
+        "regular" : 0,
+        "warning" : 0,
+        "msg" : 0,
+        "user" : 55,
+        "rollovers" : 0
+    },
+    "connections" : {
+        "current" : 15,
+        "available" : 838845,
+        "totalCreated" : 1618,
+        "active" : 2,
+        "exhaustIsMaster" : 1,
+        "awaitingTopologyChanges" : 1
+    },
+    "defaultRWConcern" : {
+        "localUpdateWallClockTime" : ISODate("2020-09-01T00:14:23.601Z")
+    },
+    "extra_info" : {
+        "note" : "fields vary by platform",
+        "user_time_us" : NumberLong(414470328),
+        "system_time_us" : NumberLong(147759287),
+        "maximum_resident_set_kb" : NumberLong(57992),
+        "input_blocks" : NumberLong(84136),
+        "output_blocks" : NumberLong(0),
+        "page_reclaims" : NumberLong(30907),
+        "page_faults" : NumberLong(424),
+        "voluntary_context_switches" : NumberLong(4656350),
+        "involuntary_context_switches" : NumberLong(4257596)
+    },
+    "hedgingMetrics" : {
+        "numTotalOperations" : NumberLong(34776),
+        "numTotalHedgedOperations" : NumberLong(34719),
+        "numAdvantageouslyHedgedOperations" : NumberLong(16088)
+    },
+    "logicalSessionRecordCache" : {
+        "activeSessionsCount" : 4,
+        "sessionsCollectionJobCount" : 249,
+        "lastSessionsCollectionJobDurationMillis" : 15,
+        "lastSessionsCollectionJobTimestamp" : ISODate("2020-09-01T00:12:44.370Z"),
+        "lastSessionsCollectionJobEntriesRefreshed" : 4,
+        "lastSessionsCollectionJobEntriesEnded" : 0,
+        "lastSessionsCollectionJobCursorsClosed" : 0,
+        "transactionReaperJobCount" : 249,
+        "lastTransactionReaperJobDurationMillis" : 4,
+        "lastTransactionReaperJobTimestamp" : ISODate("2020-09-01T00:12:44.370Z"),
+        "lastTransactionReaperJobEntriesCleanedUp" : 0,
+        "sessionCatalogSize" : 0
+    },
+    "network" : {
+        "bytesIn" : NumberLong(115178067),
+        "bytesOut" : NumberLong(5255441112),
+        "physicalBytesIn" : NumberLong(115155225),
+        "physicalBytesOut" : NumberLong(5255441112),
+        "numSlowDNSOperations" : NumberLong(0),
+        "numSlowSSLOperations" : NumberLong(0),
+        "numRequests" : NumberLong(295243),
+        "tcpFastOpen" : {
+            "kernelSetting" : NumberLong(1),
+            "serverSupported" : true,
+            "clientSupported" : true,
+            "accepted" : NumberLong(0)
+        },
+        "compression" : {
+            "snappy" : {
+                "compressor" : {
+                    "bytesIn" : NumberLong(375505426),
+                    "bytesOut" : NumberLong(304919476)
+                },
+                "decompressor" : {
+                    "bytesIn" : NumberLong(835205269),
+                    "bytesOut" : NumberLong(3547214049)
+                }
+            },
+            "zstd" : {
+                "compressor" : {
+                    "bytesIn" : NumberLong(0),
+                    "bytesOut" : NumberLong(0)
+                },
+                "decompressor" : {
+                    "bytesIn" : NumberLong(0),
+                    "bytesOut" : NumberLong(0)
+                }
+            },
+            "zlib" : {
+                "compressor" : {
+                    "bytesIn" : NumberLong(0),
+                    "bytesOut" : NumberLong(0)
+                },
+                "decompressor" : {
+                    "bytesIn" : NumberLong(0),
+                    "bytesOut" : NumberLong(0)
+                }
+            }
+        },
+        "serviceExecutorTaskStats" : {
+            "executor" : "passthrough",
+            "threadsRunning" : 15
+        }
+    },
+    "opcounters" : {
+        "insert" : NumberLong(3),
+        "query" : NumberLong(18007),
+        "update" : NumberLong(281),
+        "delete" : NumberLong(0),
+        "getmore" : NumberLong(0),
+        "command" : NumberLong(277221)
+    },
+    "security" : {
+        "authentication" : {
+            "mechanisms" : {
+                "MONGODB-X509" : {
+                    "speculativeAuthenticate" : {
+                        "received" : NumberLong(0),
+                        "successful" : NumberLong(0)
+                    },
+                    "authenticate" : {
+                        "received" : NumberLong(0),
+                        "successful" : NumberLong(0)
+                    }
+                },
+                "SCRAM-SHA-1" : {
+                    "speculativeAuthenticate" : {
+                        "received" : NumberLong(0),
+                        "successful" : NumberLong(0)
+                    },
+                    "authenticate" : {
+                        "received" : NumberLong(28806),
+                        "successful" : NumberLong(1374)
+                    }
+                },
+                "SCRAM-SHA-256" : {
+                    "speculativeAuthenticate" : {
+                        "received" : NumberLong(1),
+                        "successful" : NumberLong(1)
+                    },
+                    "authenticate" : {
+                        "received" : NumberLong(57),
+                        "successful" : NumberLong(57)
+                    }
+                }
+            }
+        }
+    },
+    "sharding" : {
+        "configsvrConnectionString" : "configsrv/configsrv1:27017,configsrv2:27017,configsrv3:27017",
+        "lastSeenConfigServerOpTime" : {
+            "ts" : Timestamp(1598919271, 1),
+            "t" : NumberLong(47)
+        },
+        "maxChunkSizeInBytes" : NumberLong(67108864)
+    },
+    "shardingStatistics" : {
+        "numHostsTargeted" : {
+            "find" : {
+                "allShards" : 2139,
+                "manyShards" : 0,
+                "oneShard" : 958,
+                "unsharded" : 14910
+            },
+            "insert" : {
+                "allShards" : 0,
+                "manyShards" : 0,
+                "oneShard" : 3,
+                "unsharded" : 0
+            },
+            "update" : {
+                "allShards" : 0,
+                "manyShards" : 0,
+                "oneShard" : 281,
+                "unsharded" : 0
+            },
+            "delete" : {
+                "allShards" : 0,
+                "manyShards" : 0,
+                "oneShard" : 0,
+                "unsharded" : 0
+            },
+            "aggregate" : {
+                "allShards" : 0,
+                "manyShards" : 0,
+                "oneShard" : 0,
+                "unsharded" : 34778
+            }
+        },
+        "catalogCache" : {
+            "numDatabaseEntries" : NumberLong(6),
+            "numCollectionEntries" : NumberLong(7),
+            "countStaleConfigErrors" : NumberLong(0),
+            "totalRefreshWaitTimeMicros" : NumberLong(21101644),
+            "numActiveIncrementalRefreshes" : NumberLong(0),
+            "countIncrementalRefreshesStarted" : NumberLong(284),
+            "numActiveFullRefreshes" : NumberLong(0),
+            "countFullRefreshesStarted" : NumberLong(7),
+            "countFailedRefreshes" : NumberLong(0),
+            "operationsBlockedByRefresh" : {
+                "countAllOperations" : NumberLong(13),
+                "countInserts" : NumberLong(0),
+                "countQueries" : NumberLong(0),
+                "countUpdates" : NumberLong(0),
+                "countDeletes" : NumberLong(0),
+                "countCommands" : NumberLong(13)
+            }
+        }
+    },
+    "tcmalloc" : {
+        "generic" : {
+            "current_allocated_bytes" : 6988600,
+            "heap_size" : 42803200
+        },
+        "tcmalloc" : {
+            "pageheap_free_bytes" : 21917696,
+            "pageheap_unmapped_bytes" : 4542464,
+            "max_total_thread_cache_bytes" : 38797312,
+            "current_total_thread_cache_bytes" : 1926704,
+            "total_free_bytes" : 9354440,
+            "central_cache_free_bytes" : 4321944,
+            "transfer_cache_free_bytes" : 3105792,
+            "thread_cache_free_bytes" : 1926704,
+            "aggressive_memory_decommit" : 0,
+            "pageheap_committed_bytes" : 38260736,
+            "pageheap_scavenge_count" : 112,
+            "pageheap_commit_count" : 260,
+            "pageheap_total_commit_bytes" : 65265664,
+            "pageheap_decommit_count" : 112,
+            "pageheap_total_decommit_bytes" : 27004928,
+            "pageheap_reserve_count" : 30,
+            "pageheap_total_reserve_bytes" : 42803200,
+            "spinlock_total_delay_ns" : 431551038,
+            "release_rate" : 1.0,
+            "formattedString" : "------------------------------------------------\nMALLOC:        6989176 (    6.7 MiB) Bytes in use by application\nMALLOC: +     21917696 (   20.9 MiB) Bytes in page heap freelist\nMALLOC: +      4321944 (    4.1 MiB) Bytes in central cache freelist\nMALLOC: +      3105792 (    3.0 MiB) Bytes in transfer cache freelist\nMALLOC: +      1926128 (    1.8 MiB) Bytes in thread cache freelists\nMALLOC: +      3407872 (    3.2 MiB) Bytes in malloc metadata\nMALLOC:   ------------\nMALLOC: =     41668608 (   39.7 MiB) Actual memory used (physical + swap)\nMALLOC: +      4542464 (    4.3 MiB) Bytes released to OS (aka unmapped)\nMALLOC:   ------------\nMALLOC: =     46211072 (   44.1 MiB) Virtual address space used\nMALLOC:\nMALLOC:           2064              Spans in use\nMALLOC:             40              Thread heaps in use\nMALLOC:           4096              Tcmalloc page size\n------------------------------------------------\nCall ReleaseFreeMemory() to release freelist memory to the OS (via madvise()).\nBytes released to the OS take up virtual address space but no physical memory.\n"
+        }
+    },
+    "trafficRecording" : {
+        "running" : false
+    },
+    "transactions" : {
+        "currentOpen" : NumberLong(0),
+        "currentActive" : NumberLong(0),
+        "currentInactive" : NumberLong(0),
+        "totalStarted" : NumberLong(0),
+        "totalCommitted" : NumberLong(0),
+        "totalAborted" : NumberLong(0),
+        "abortCause" : {},
+        "totalContactedParticipants" : NumberLong(0),
+        "totalParticipantsAtCommit" : NumberLong(0),
+        "totalRequestsTargeted" : NumberLong(0),
+        "commitTypes" : {
+            "noShards" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            },
+            "singleShard" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            },
+            "singleWriteShard" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            },
+            "readOnly" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            },
+            "twoPhaseCommit" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            },
+            "recoverWithToken" : {
+                "initiated" : NumberLong(0),
+                "successful" : NumberLong(0),
+                "successfulDurationMicros" : NumberLong(0)
+            }
+        }
+    },
+    "transportSecurity" : {
+        "1.0" : NumberLong(0),
+        "1.1" : NumberLong(0),
+        "1.2" : NumberLong(0),
+        "1.3" : NumberLong(0),
+        "unknown" : NumberLong(0)
+    },
+    "mem" : {
+        "bits" : 64,
+        "resident" : 52,
+        "virtual" : 1494,
+        "supported" : true
+    },
+    "metrics" : {
+        "cursor" : {
+            "timedOut" : NumberLong(0),
+            "open" : {
+                "multiTarget" : NumberLong(0),
+                "singleTarget" : NumberLong(0),
+                "pinned" : NumberLong(0),
+                "total" : NumberLong(0)
+            }
+        },
+        "aggStageCounters" : {
+            "$_internalInhibitOptimization" : NumberLong(0),
+            "$_internalSplitPipeline" : NumberLong(0),
+            "$addFields" : NumberLong(0),
+            "$bucket" : NumberLong(0),
+            "$bucketAuto" : NumberLong(0),
+            "$changeStream" : NumberLong(0),
+            "$collStats" : NumberLong(0),
+            "$count" : NumberLong(0),
+            "$currentOp" : NumberLong(2),
+            "$facet" : NumberLong(0),
+            "$geoNear" : NumberLong(0),
+            "$graphLookup" : NumberLong(0),
+            "$group" : NumberLong(34778),
+            "$indexStats" : NumberLong(0),
+            "$limit" : NumberLong(0),
+            "$listLocalSessions" : NumberLong(0),
+            "$listSessions" : NumberLong(0),
+            "$lookup" : NumberLong(0),
+            "$match" : NumberLong(24842),
+            "$merge" : NumberLong(0),
+            "$mergeCursors" : NumberLong(0),
+            "$out" : NumberLong(0),
+            "$planCacheStats" : NumberLong(0),
+            "$project" : NumberLong(0),
+            "$redact" : NumberLong(0),
+            "$replaceRoot" : NumberLong(0),
+            "$replaceWith" : NumberLong(0),
+            "$sample" : NumberLong(0),
+            "$set" : NumberLong(0),
+            "$skip" : NumberLong(0),
+            "$sort" : NumberLong(2),
+            "$sortByCount" : NumberLong(0),
+            "$unionWith" : NumberLong(0),
+            "$unset" : NumberLong(0),
+            "$unwind" : NumberLong(0)
+        },
+        "commands" : {
+            "aggregate" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(34776)
+            },
+            "buildInfo" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(14951)
+            },
+            "collStats" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(44727)
+            },
+            "connPoolStats" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(4969)
+            },
+            "currentOp" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(2)
+            },
+            "dbStats" : {
+                "failed" : NumberLong(3),
+                "total" : NumberLong(29796)
+            },
+            "endSessions" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(5)
+            },
+            "find" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(18007)
+            },
+            "findAndModify" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(3)
+            },
+            "getLog" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(1637)
+            },
+            "getnonce" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(98)
+            },
+            "insert" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(3)
+            },
+            "isMaster" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(46898)
+            },
+            "listCollections" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(19875)
+            },
+            "listDatabases" : {
+                "failed" : NumberLong(1),
+                "total" : NumberLong(9952)
+            },
+            "ping" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(5092)
+            },
+            "saslContinue" : {
+                "failed" : NumberLong(27416),
+                "total" : NumberLong(30277)
+            },
+            "saslStart" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(28862)
+            },
+            "serverStatus" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(5005)
+            },
+            "update" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(281)
+            },
+            "whatsmyuri" : {
+                "failed" : NumberLong(0),
+                "total" : NumberLong(12)
+            }
+        },
+        "getLastError" : {
+            "wtime" : {
+                "num" : 0,
+                "totalMillis" : 0
+            },
+            "wtimeouts" : NumberLong(0),
+            "default" : {
+                "unsatisfiable" : NumberLong(0),
+                "wtimeouts" : NumberLong(0)
+            }
+        },
+        "query" : {
+            "planCacheTotalSizeEstimateBytes" : NumberLong(0),
+            "updateOneOpStyleBroadcastWithExactIDCount" : NumberLong(0)
+        },
+        "repl" : {
+            "network" : {
+                "oplogGetMoresProcessed" : {
+                    "num" : 0,
+                    "totalMillis" : 0
+                }
+            }
+        }
+    },
+    "ok" : 1.0,
+    "operationTime" : Timestamp(1598919271, 1),
+    "$clusterTime" : {
+        "clusterTime" : Timestamp(1598919271, 1),
+        "signature" : {
+            "hash" : { "$binary" : "zuhF9pE3TclysnKxqnKHWdy/itI=", "$type" : "00" },
+            "keyId" : NumberLong(6861322835042762759)
+        }
+    }
+}
