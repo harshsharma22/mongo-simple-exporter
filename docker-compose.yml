@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
 
-  mongos-exporter:
+  mongo-simple-exporter:
     build: .
     ports:
       - 8880:8880
@@ -25,11 +25,11 @@ services:
     environment:
       - SCRAPE_INTERVAL=15s
       - SCRAPE_TIMEOUT=10s
-      - DNS_SCRAPE_TARGETS=mongos-exporter@mongos-exporter:8880/metrics
+      - DNS_SCRAPE_TARGETS=mongo-simple-exporter@mongo-simple-exporter:8880/metrics
       # - STATIC_SCRAPE_TARGETS=mynginx1@nginx1ip:8080 mysqlexporter1@sqlexporter1ip:7070
 
   grafana:
-    image: flaviostutz/grafana:5.2.4
+    image: flaviostutz/grafana:7.1.3.0
     ports:
       - 3000:3000
     environment:
