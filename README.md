@@ -1,12 +1,12 @@
 # mongos-exporter
 
-MongoDB metrics Prometheus exporter based on mongos daemon for more getting general metrics regarding to slow queries, number of connections, log counters etc.
+MongoDB metrics Prometheus exporter for metrics regarding to slow queries, number of connections, log counters, total storage, operations count etc.
 
-It was created mainly for working with mongo clusters by pointing to mongos router daemons, but some metrics works on standalone mongo instances too.
+This works with standalone or clusters by pointing this exporter to the mongos instance.
 
 For creating a whole MongoDB cluster, see https://github.com/stutzlab/mongo-cluster
 
-The metrics are updated every 10s.
+The metrics are updated every ~10s (collection stats are updated each 30s).
 
 ## Usage
 

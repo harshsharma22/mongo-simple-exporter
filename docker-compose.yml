@@ -18,21 +18,21 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=example
 
-  # prometheus:
-  #   image: flaviostutz/prometheus
-  #   ports:
-  #     - 9090:9090
-  #   environment:
-  #     - SCRAPE_INTERVAL=15s
-  #     - SCRAPE_TIMEOUT=10s
-  #     - DNS_SCRAPE_TARGETS=mongos-exporter@mongos-exporter:8880/metrics
-  #     # - STATIC_SCRAPE_TARGETS=mynginx1@nginx1ip:8080 mysqlexporter1@sqlexporter1ip:7070
+  prometheus:
+    image: flaviostutz/prometheus
+    ports:
+      - 9090:9090
+    environment:
+      - SCRAPE_INTERVAL=15s
+      - SCRAPE_TIMEOUT=10s
+      - DNS_SCRAPE_TARGETS=mongos-exporter@mongos-exporter:8880/metrics
+      # - STATIC_SCRAPE_TARGETS=mynginx1@nginx1ip:8080 mysqlexporter1@sqlexporter1ip:7070
 
-  # grafana:
-  #   image: flaviostutz/grafana:5.2.4
-  #   ports:
-  #     - 3000:3000
-  #   environment:
-  #     - GF_SECURITY_ADMIN_PASSWORD=mypass
+  grafana:
+    image: flaviostutz/grafana:5.2.4
+    ports:
+      - 3000:3000
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=mypass
 
     
