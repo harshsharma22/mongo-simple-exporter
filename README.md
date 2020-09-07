@@ -8,6 +8,10 @@ For creating a whole MongoDB cluster, see https://github.com/stutzlab/mongo-clus
 
 The metrics are updated every ~10s (collection stats are updated each 30s).
 
+Get a [sample Grafana Dashboard here](/mongo-dashboard-grafana.json) and import to your Grafana
+
+<img src="grafana1.png" >
+
 ## Usage
 
 * Create a docker-compose.yml
