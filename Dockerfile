@@ -1,4 +1,4 @@
-FROM golang:1.14.3-alpine3.11 AS BUILD
+FROM golang:1.20.8-alpine3.18 AS BUILD
 
 RUN apk add gcc build-base
 
@@ -18,7 +18,7 @@ RUN chmod +x /bin/mongos-exporter
 
 
 
-FROM alpine:3.12.0
+FROM alpine:3.18.0
 
 ENV MONGODB_URL ''
 
